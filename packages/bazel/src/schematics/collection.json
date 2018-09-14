@@ -1,0 +1,36 @@
+{
+    "name": "@angular/bazel",
+    "version": "0.1",
+    "schematics": {
+      "ng-new": {
+        "factory": "./ng-new",
+        "schema": "./ng-new/schema.json",
+        "description": "Create a bazel workspace with an angular application",
+        "hidden": true
+      },
+      "e2e": {
+        "factory": "./e2e",
+        "schema": "./e2e/schema.json",
+        "description": "Create an Angular Bazel e2e application.",
+        "hidden": true
+      },
+      "workspace": {
+        "factory": "./workspace",
+        "schema": "./workspace/schema.json",
+        "description": "Create an empty bazel workspace",
+        "hidden": true
+      },
+      "module": {
+        "aliases": [ "m" ],
+        "factory": "./module",
+        "schema": "./module/schema.json",
+        "description": "Create a module"
+      },
+      "application": {
+        "aliases": [ "app" ],
+        "factory": "./application",
+        "schema": "./application/schema.json",
+        "description": "Create an application"
+      }
+    }
+  }
